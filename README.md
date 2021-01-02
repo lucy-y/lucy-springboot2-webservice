@@ -15,6 +15,18 @@ example
 insert into POSTS (TITLE, CONTENT, AUTHOR) values ('title', 'content', 'author');
 ```
 
+### db
+```
+show variables like 'c%';
+
+use springboot2_webservice;
+
+alter database springboot2_webservice
+CHARACTER SET = 'utf8mb4'
+COLLATE = 'utf8mb4_general_ci';
+
+select @@time_zone, now();
+```
 ### 참고사항
 - Gradle 업그레이드
 ```
